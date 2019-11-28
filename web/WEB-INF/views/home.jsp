@@ -10,5 +10,7 @@
     <h1>Strona testowa</h1>
 </div>
 <h2>Piękna</h2>
+
+<a href="<c:url value="/search" />">Link</a>
 </body>
 </html>

@@ -9,8 +9,9 @@
 <div class="header">
     <h1>Strona testowa</h1>
 </div>
-<h2>Piękna</h2>
-
-<a href="<c:url value="/search" />">Link</a>
+<p><a href="<c:url value="/cars"/> ">Samochody</a></p>
+<p>Kalendarz</p>
+<hr>
+<a href="<c:url value="/homepage" />">Homepage</a>
 </body>
 </html>

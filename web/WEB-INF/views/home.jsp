@@ -1,17 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: MacBul
-  Date: 28.11.2019
-  Time: 08:44
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Rezerwacja samochodów służbowych</title>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/mystyle.css" />">
 </head>
 <body>
-<h1>Strona testowa</h1>
+<div class="header">
+    <h1>Strona testowa</h1>
+</div>
 <h2>Piękna</h2>
 </body>
 </html>

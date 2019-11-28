@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Home page</title>
+    <title>Rezerwacja samochodów służbowych</title>
 </head>
 <body>
-
+<h1>Strona testowa</h1>
+<h2>Piękna</h2>
 </body>
 </html>

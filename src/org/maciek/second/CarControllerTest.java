@@ -5,6 +5,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.servlet.view.InternalResourceView;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,18 +20,22 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
 public class CarControllerTest {
     @Test
     public void showCars() throws Exception {
-        List<Car> expectedCarList = createCarList();
+        List<Car> expectedCarList = createCarList(1);
         CarRepository mockRepository = mock(CarRepository.class);
-        when(mockRepository.findCars()).thenReturn(expectedCarList);
+        when(mockRepository.findCars(1)).thenReturn(expectedCarList);
         CarsController carsController = new CarsController(mockRepository);
         MockMvc mockMvc = standaloneSetup(carsController).setSingleView(new InternalResourceView("/WEB-INF/views/cars.jsp")).build();
-        mockMvc.perform(get("/cars")).andExpect(view().name("cars")).
+        mockMvc.perform(get("/cars?noCars=1")).andExpect(view().name("cars")).
                 andExpect(model().attributeExists("carList")).andExpect(model().attribute("carList", hasItems(expectedCarList.toArray())));
     }
 
-    static List<Car> createCarList() {
-        return Arrays.asList(new Car("SG 0087A","Skoda", "Superb"),
-                new Car("SG 0932A", "Mazda", "3"));
-
+    static List<Car> createCarList(int noCars) {
+        Car[] cars = {new Car("SG 0087A","Skoda", "Superb"),
+                new Car("SG 0932A", "Mazda", "3")};
+        List<Car> carList = new ArrayList<>();
+        for (int i = 0; i < noCars; i++) {
+            carList.add(cars[i]);
+        }
+        return carList;
     }
 }

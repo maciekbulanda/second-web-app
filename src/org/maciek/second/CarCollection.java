@@ -7,7 +7,7 @@ import java.util.List;
 @Component
 public class CarCollection implements CarRepository {
     @Override
-    public List<Car> findCars() {
-        return CarControllerTest.createCarList();
+    public List<Car> findCars(int noCars) {
+        return CarControllerTest.createCarList(noCars);
     }
 }

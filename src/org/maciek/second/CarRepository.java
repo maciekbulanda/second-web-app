@@ -6,5 +6,5 @@ import java.util.List;
 
 @Component
 public interface CarRepository {
-    List<Car> findCars();
+    List<Car> findCars(int noCars);
 }

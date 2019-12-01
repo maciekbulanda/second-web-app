@@ -10,4 +10,8 @@ public class CarCollection implements CarRepository {
     public List<Car> findCars(int noCars) {
         return CarControllerTest.createCarList(noCars);
     }
+
+    public Car findCar(int index) {
+        return CarControllerTest.getCarById(index);
+    }
 }

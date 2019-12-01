@@ -7,4 +7,5 @@ import java.util.List;
 @Component
 public interface CarRepository {
     List<Car> findCars(int noCars);
+    Car findCar(int index);
 }

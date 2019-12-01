@@ -12,7 +12,6 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class HomeController {
     @RequestMapping(method = GET)
     public String home() {
-        System.out.println(new Date());
         return "home";
     }
 }

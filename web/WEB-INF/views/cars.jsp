@@ -10,6 +10,7 @@
 <c:forEach items="${carList}" var="car">
 <li>${car.brand} ${car.model} <b>${car.registrationNumber}</b><br></li>
 </c:forEach>
-
+${car.brand} ${car.model} <b>${car.registrationNumber}
+    <a href="<c:url value="/cars/carAdd"/>">Dodaj</a>
 </body>
 </html>

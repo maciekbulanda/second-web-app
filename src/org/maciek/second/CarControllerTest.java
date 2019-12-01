@@ -38,4 +38,10 @@ public class CarControllerTest {
         }
         return carList;
     }
+
+    static Car getCarById(int index) {
+        Car[] cars = {new Car("SG 0087A","Skoda", "Superb"),
+                new Car("SG 0932A", "Mazda", "3")};
+        return cars[index];
+    }
 }

@@ -6,9 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/mystyle.css" />">
 </head>
 <body>
-<div class="header">
-    <h1>Rezerwacja samochodów</h1>
-</div>
+    <h2 class="header">Rezerwacja samochodów</h2>
 <p><a href="<c:url value="/cars"/> ">Samochody</a></p>
 <p>Kalendarz</p>
 <hr>

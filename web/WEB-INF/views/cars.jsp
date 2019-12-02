@@ -6,11 +6,15 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/mystyle.css" />">
 </head>
 <body>
-<h2>Flota</h2>
-<c:forEach items="${carList}" var="car">
-<li>${car.brand} ${car.model} <b>${car.registrationNumber}</b><br></li>
-</c:forEach>
-${car.brand} ${car.model} <b>${car.registrationNumber}
+    <h2 class="header">Flota</h2>
+    <table>
+        <tr><th>Samochód</th><th>Nr rejestracyjny</th></tr>
+        <c:forEach items="${carList}" var="car">
+            <tr>
+                <td>${car.brand} ${car.model}</td><td>${car.registrationNumber}</td>
+            </tr>
+        </c:forEach>
+    </table>
     <a href="<c:url value="/cars/carAdd"/>">Dodaj</a>
 </body>
 </html>

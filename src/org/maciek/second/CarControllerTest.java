@@ -33,6 +33,9 @@ public class CarControllerTest {
         Car[] cars = {new Car("SG 0087A","Skoda", "Superb"),
                 new Car("SG 0932A", "Mazda", "3")};
         List<Car> carList = new ArrayList<>();
+        if (noCars == 0) {
+            noCars = cars.length;
+        }
         for (int i = 0; i < noCars; i++) {
             carList.add(cars[i]);
         }

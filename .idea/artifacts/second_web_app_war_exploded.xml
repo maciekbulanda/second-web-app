@@ -3,12 +3,18 @@
     <output-path>$PROJECT_DIR$/out/artifacts/second_web_app_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate Validator-4.2.0" />
+          <element id="library" level="module" name="JUnit4" module-name="second-web-app" />
+          <element id="library" level="project" name="javax.validation:validation-api:2.0.1.Final" />
+          <element id="library" level="project" name="org.apache.tiles:tiles-jsp:3.0.8" />
+          <element id="library" level="project" name="org.mockito:mockito-core:2.2.7" />
+          <element id="library" level="project" name="org.thymeleaf:thymeleaf-spring4:2.1.4.RELEASE" />
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+        </element>
         <element id="directory" name="classes">
           <element id="module-output" name="second-web-app" />
-        </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
-          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="second-web-app/web/Web" />

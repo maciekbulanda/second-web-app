@@ -1,11 +1,10 @@
 package org.maciek.second;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class Test {
-    @NotNull
-    @Size(min=3, message = "message")
+
+    @Size(min = 3, message = "message")
     private String val1;
 
     public String getVal1() {

@@ -3,12 +3,13 @@ package org.maciek.second;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+
 public class Car {
     @NotNull
     private String registrationNumber;
 
     @NotNull
-    @Size(min=2, max=10)
+    @Size(min = 2, max = 10)
     private String brand;
 
     @NotNull

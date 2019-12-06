@@ -6,7 +6,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.ideaLibSources/validation-api-2.0.1.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/validation-api-2.0.1.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
